@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Reveal from './Reveal'
-import runnerPhoto from '../assets/figma/final-cta-photo.png'
+import heroPhoto from '../assets/figma/final-cta-photo-new.png'
 
 export default function FinalCTA() {
   const cardRef = useRef(null)
@@ -17,7 +17,7 @@ export default function FinalCTA() {
         className="mx-auto flex max-w-[1360px] flex-col overflow-hidden rounded-[24px] shadow-[0px_0px_25px_rgba(0,0,0,0.25)] md:flex-row"
       >
         <div className="relative h-[240px] w-full md:h-auto md:w-[480px] md:self-stretch">
-          <img src={runnerPhoto} alt="" className="absolute inset-0 h-full w-full object-cover" />
+          <img src={heroPhoto} alt="" className="absolute inset-0 h-full w-full object-cover" />
         </div>
 
         <div

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 
 export default function Typewriter({
   text,
@@ -16,7 +16,7 @@ export default function Typewriter({
   const ref = useRef(null)
   const inView = useInView(ref, { once, amount })
   const shouldStart = triggerOnView ? inView : true
-  const Comp = as
+  const Comp = motion[as] ?? motion.span
 
   useEffect(() => {
     if (!shouldStart) return undefined
@@ -41,7 +41,13 @@ export default function Typewriter({
   }, [text, speed, startDelay, shouldStart])
 
   return (
-    <Comp ref={ref} className={className}>
+    <Comp
+      ref={ref}
+      className={className}
+      initial={{ opacity: 0 }}
+      animate={shouldStart ? { opacity: 1 } : { opacity: 0 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+    >
       {text.slice(0, count)}
       <span className={`inline-block w-[2px] translate-y-[0.1em] bg-current align-middle ${done ? 'animate-pulse' : 'opacity-100'}`}>
         &nbsp;

@@ -71,7 +71,7 @@ export default function NormalNotOptimal() {
                   <motion.div
                     animate={inView ? { scale: [1, 1.18, 1] } : {}}
                     transition={{ duration: 1.7, repeat: Infinity, ease: 'easeInOut', delay: 1.55 + i * 0.3 }}
-                    className="h-7 w-7 rounded-full border-[3px] border-white bg-white shadow-[0_0_10px_3px_rgba(255,255,255,0.9),0_2px_6px_rgba(0,0,0,0.2)]"
+                    className="h-7 w-7 rounded-full border-[3px] border-white bg-white shadow-[0_0_14px_5px_rgba(244,197,66,0.65),0_2px_6px_rgba(0,0,0,0.2)]"
                   />
                 </motion.div>
               ))}

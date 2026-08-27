@@ -70,7 +70,7 @@ export default function WhyItMatters() {
               <motion.div
                 animate={inView ? { scale: [1, 1.18, 1] } : {}}
                 transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut', delay: 1.4 }}
-                className="h-4 w-4 rounded-full border-[3px] border-white bg-white shadow-[0_0_10px_3px_rgba(255,255,255,0.9),0_2px_6px_rgba(0,0,0,0.2)]"
+                className="h-4 w-4 rounded-full border-[3px] border-white bg-white shadow-[0_0_12px_4px_rgba(244,122,46,0.55),0_2px_6px_rgba(0,0,0,0.2)]"
               />
             </motion.div>
           </div>
