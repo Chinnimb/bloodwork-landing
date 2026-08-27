@@ -1,4 +1,5 @@
 import Hero from './components/Hero'
+import BloodworkJourney from './components/BloodworkJourney'
 import NormalNotOptimal from './components/NormalNotOptimal'
 import WhatBloodworkShows from './components/WhatBloodworkShows'
 import HowBloodworkWorks from './components/HowBloodworkWorks'
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="relative min-h-screen bg-cream text-ink">
       <Hero />
+      <BloodworkJourney />
       <NormalNotOptimal />
       <WhatBloodworkShows />
       <HowBloodworkWorks />

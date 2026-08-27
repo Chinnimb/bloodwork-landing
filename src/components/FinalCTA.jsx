@@ -32,7 +32,7 @@ export default function FinalCTA() {
 
           <Reveal delay={0.1}>
             <h2 className="max-w-xl text-[28px] font-bold leading-tight tracking-[-0.8px] text-[#233038] sm:text-3xl md:text-[48px]">
-              The Protocol for optimal performance,
+              The protocol for optimal performance,
               <br />
               <span className="font-script block italic text-orange-3">built around your biology.</span>
             </h2>
@@ -41,7 +41,7 @@ export default function FinalCTA() {
           <Reveal delay={0.3} className="flex justify-center md:block">
             <a
               href="#choose"
-              className="mt-9 inline-block rounded-full bg-[#233038] px-7 py-3.5 text-lg font-semibold text-white"
+              className="mt-9 inline-block rounded-full bg-[#0a0a0a] px-7 py-3.5 text-lg font-semibold text-white"
             >
               Start bloodwork today
             </a>
