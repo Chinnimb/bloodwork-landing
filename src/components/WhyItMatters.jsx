@@ -68,9 +68,9 @@ export default function WhyItMatters() {
               className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2"
             >
               <motion.div
-                animate={inView ? { scale: [1, 1.2, 1] } : {}}
+                animate={inView ? { scale: [1, 1.18, 1] } : {}}
                 transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut', delay: 1.4 }}
-                className="h-4 w-4 rounded-full border-[3px] border-white bg-orange-2 shadow-[0_0_0_3px_rgba(242,122,46,0.25)]"
+                className="h-4 w-4 rounded-full border-[3px] border-white bg-white shadow-[0_0_10px_3px_rgba(255,255,255,0.9)]"
               />
             </motion.div>
           </div>
