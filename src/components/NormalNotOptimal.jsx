@@ -55,7 +55,7 @@ export default function NormalNotOptimal() {
                   animate={inView ? { clipPath: 'inset(0 0% 0 0)' } : {}}
                   transition={{ duration: 1.4, ease: [0.45, 0.05, 0.15, 1] }}
                   className="h-full w-full"
-                  style={{ backgroundImage: 'linear-gradient(90deg, #b8341a 0%, #f27a2e 45%, #f4ac63 100%)' }}
+                  style={{ backgroundImage: 'linear-gradient(90deg, #b8341a 0%, #e0521c 40%, #f27a2e 100%)' }}
                 />
               </div>
 
@@ -71,7 +71,7 @@ export default function NormalNotOptimal() {
                   <motion.div
                     animate={inView ? { scale: [1, 1.18, 1] } : {}}
                     transition={{ duration: 1.7, repeat: Infinity, ease: 'easeInOut', delay: 1.55 + i * 0.3 }}
-                    className="h-7 w-7 rounded-full border-[3px] border-white bg-white shadow-[0_0_10px_3px_rgba(255,255,255,0.9)]"
+                    className="h-7 w-7 rounded-full border-[3px] border-white bg-white shadow-[0_0_10px_3px_rgba(255,255,255,0.9),0_2px_6px_rgba(0,0,0,0.2)]"
                   />
                 </motion.div>
               ))}
