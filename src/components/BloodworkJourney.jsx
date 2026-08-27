@@ -111,7 +111,7 @@ export default function BloodworkJourney() {
           <Reveal delay={0.1}>
             <h2 className="text-3xl font-bold leading-tight text-[#1c1c1e] sm:text-4xl md:text-[48px]">
               What happens{' '}
-              <FadeIn as="span" className="font-serif font-medium text-orange-2" delay={0.3}>
+              <FadeIn as="span" className="font-serif font-medium italic text-orange-2" delay={0.3}>
                 next?
               </FadeIn>
             </h2>

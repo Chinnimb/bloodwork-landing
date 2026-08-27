@@ -24,7 +24,7 @@ export default function NormalNotOptimal() {
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-[48px]">
             &ldquo;Normal&rdquo; is far from optimal.
           </h2>
-          <FadeIn as="p" className="text-gradient-orange mt-2 font-serif text-2xl italic md:text-3xl" delay={0.3}>
+          <FadeIn as="p" className="text-gradient-orange mt-2 font-serif text-2xl font-medium italic md:text-3xl" delay={0.3}>
             We hold your health to a higher, measurable standard.
           </FadeIn>
         </Reveal>

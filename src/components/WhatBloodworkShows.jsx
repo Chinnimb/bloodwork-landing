@@ -25,7 +25,7 @@ export default function WhatBloodworkShows() {
           className="text-lg font-bold uppercase tracking-[2.2px] text-orange-3"
         />
         <FadeIn as="h2" className="max-w-2xl text-3xl font-bold leading-tight text-black sm:text-4xl md:text-[48px]" delay={0.1}>
-          What bloodwork <span className="font-serif italic text-orange-2">can reveal?</span>
+          What bloodwork <span className="font-serif font-medium italic text-orange-2">can reveal?</span>
         </FadeIn>
         <Reveal delay={0.2} as="p" className="max-w-xl text-base leading-relaxed text-[#6e6e6e] md:text-lg">
           Your labs can uncover the hidden signals behind how you feel, perform, recover, and age.
