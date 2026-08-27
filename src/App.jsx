@@ -1,7 +1,25 @@
+import Hero from './components/Hero'
+import NormalNotOptimal from './components/NormalNotOptimal'
+import WhatBloodworkShows from './components/WhatBloodworkShows'
+import HowBloodworkWorks from './components/HowBloodworkWorks'
+import WhyItMatters from './components/WhyItMatters'
+import Testimonial from './components/Testimonial'
+import FAQ from './components/FAQ'
+import FinalCTA from './components/FinalCTA'
+import Footer from './components/Footer'
+
 function App() {
   return (
     <div className="relative min-h-screen bg-cream text-ink">
-      <p className="p-10 text-center">Bloodwork landing — under construction</p>
+      <Hero />
+      <NormalNotOptimal />
+      <WhatBloodworkShows />
+      <HowBloodworkWorks />
+      <WhyItMatters />
+      <Testimonial />
+      <FAQ />
+      <FinalCTA />
+      <Footer />
     </div>
   )
 }

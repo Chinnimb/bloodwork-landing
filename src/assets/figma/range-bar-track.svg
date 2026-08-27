@@ -1,0 +1,28 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1302" height="52" viewBox="0 0 1302 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="RangeBar">
+<g clip-path="url(#clip0_0_7)">
+<rect id="seg-dark-left" width="120" height="52" fill="#B73112"/>
+<rect id="seg-beige" x="120" width="760" height="52" fill="url(#paint0_linear_0_7)"/>
+<g id="seg-orange">
+<rect x="880" width="254" height="52" fill="#FC5F2B"/>
+<rect x="880" width="254" height="52" fill="url(#paint1_linear_0_7)"/>
+</g>
+<rect id="seg-dark-right" x="1134" width="168" height="52" fill="#B73112"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_7" x1="120" y1="5.65442" x2="765.372" y2="299.167" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4C1703"/>
+<stop offset="0.45272" stop-color="#D85E01"/>
+<stop offset="0.764423" stop-color="#C55401"/>
+<stop offset="1" stop-color="#571D03"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_7" x1="880" y1="26" x2="1134" y2="26" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F45F2B"/>
+<stop offset="1" stop-color="#F4AC63"/>
+</linearGradient>
+<clipPath id="clip0_0_7">
+<rect width="1302" height="52" rx="26" fill="white"/>
+</clipPath>
+</defs>
+</svg>
