@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-script: "Instrument Serif", Georgia, serif;
+
+  --color-cream: #fdfdfc;
+  --color-ink: #161b1f;
+  --color-ink-2: #180f0d;
+  --color-navy: #1f3039;
+  --color-orange: #f45f2b;
+  --color-orange-light: #f4ac63;
+  --color-orange-2: #f27a2e;
+  --color-orange-3: #f54f2b;
+  --color-orange-4: #ea653a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-gradient-orange {
+  background-image: linear-gradient(90deg, #f45f2b 0%, #f4ac63 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient-orange {
+  background-image: linear-gradient(90deg, #f45f2b 0%, #f4ac63 100%);
+}
+
+::selection {
+  background: var(--color-orange);
+  color: white;
+}
