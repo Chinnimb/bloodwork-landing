@@ -1,9 +1,9 @@
 import Hero from './components/Hero'
-import BloodworkJourney from './components/BloodworkJourney'
 import NormalNotOptimal from './components/NormalNotOptimal'
 import WhatBloodworkShows from './components/WhatBloodworkShows'
 import HowBloodworkWorks from './components/HowBloodworkWorks'
 import WhyItMatters from './components/WhyItMatters'
+import BloodworkJourney from './components/BloodworkJourney'
 import Testimonial from './components/Testimonial'
 import FAQ from './components/FAQ'
 import FinalCTA from './components/FinalCTA'
@@ -13,11 +13,11 @@ function App() {
   return (
     <div className="relative min-h-screen bg-cream text-ink">
       <Hero />
-      <BloodworkJourney />
       <NormalNotOptimal />
       <WhatBloodworkShows />
       <HowBloodworkWorks />
       <WhyItMatters />
+      <BloodworkJourney />
       <Testimonial />
       <FAQ />
       <FinalCTA />
