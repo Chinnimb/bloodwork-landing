@@ -27,7 +27,7 @@ export default function WhyItMatters() {
             text="Why it matters"
             className="text-lg font-bold uppercase tracking-[2.2px] text-orange-3"
           />
-          <FadeIn as="h2" className="mt-4 text-3xl font-bold leading-tight text-black sm:text-4xl md:text-[44px]" delay={0.1}>
+          <FadeIn as="h2" className="mt-4 text-3xl font-bold leading-tight text-black sm:text-4xl md:text-[48px]" delay={0.1}>
             From vague symptoms to exact next steps and peace of mind.
           </FadeIn>
           <Reveal delay={0.2} as="p" className="mt-5 max-w-lg text-base leading-relaxed text-[#6e6e6e] md:text-lg">

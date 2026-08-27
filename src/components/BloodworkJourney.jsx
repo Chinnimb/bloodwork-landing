@@ -109,7 +109,7 @@ export default function BloodworkJourney() {
             className="text-base font-bold uppercase tracking-[1.5px] text-orange-3"
           />
           <Reveal delay={0.1}>
-            <h2 className="text-4xl font-bold leading-tight text-[#1c1c1e] md:text-[56px]">
+            <h2 className="text-3xl font-bold leading-tight text-[#1c1c1e] sm:text-4xl md:text-[48px]">
               What happens{' '}
               <FadeIn as="span" className="font-serif font-medium text-orange-2" delay={0.3}>
                 next?

@@ -21,7 +21,7 @@ export default function NormalNotOptimal() {
         />
 
         <Reveal delay={0.05} className="mt-4">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-[44px]">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl md:text-[48px]">
             &ldquo;Normal&rdquo; is far from optimal.
           </h2>
           <FadeIn as="p" className="text-gradient-orange mt-2 font-serif text-2xl italic md:text-3xl" delay={0.3}>
@@ -71,7 +71,7 @@ export default function NormalNotOptimal() {
                   <motion.div
                     animate={inView ? { scale: [1, 1.18, 1] } : {}}
                     transition={{ duration: 1.7, repeat: Infinity, ease: 'easeInOut', delay: 1.55 + i * 0.3 }}
-                    className="h-7 w-7 rounded-full border-[3px] border-white bg-white shadow-[0_0_14px_5px_rgba(244,197,66,0.65),0_2px_6px_rgba(0,0,0,0.2)]"
+                    className="h-3 w-3 rounded-full border-2 border-white bg-white shadow-[0_0_10px_4px_rgba(244,197,66,0.65),0_1px_4px_rgba(0,0,0,0.2)]"
                   />
                 </motion.div>
               ))}
