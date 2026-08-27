@@ -1,4 +1,6 @@
 import { Check } from 'lucide-react'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
 import Reveal from './Reveal'
 import FadeIn from './FadeIn'
 import Typewriter from './Typewriter'
@@ -10,6 +12,9 @@ const points = [
 ]
 
 export default function WhyItMatters() {
+  const barRef = useRef(null)
+  const inView = useInView(barRef, { once: true, amount: 0.6 })
+
   return (
     <section className="bg-cream px-4 py-16 sm:px-6 md:px-10">
       <div className="mx-auto grid max-w-[1200px] items-center gap-12 md:grid-cols-2">
@@ -42,17 +47,38 @@ export default function WhyItMatters() {
         </div>
 
         <Reveal delay={0.25} className="rounded-[24px] border border-[#f4ac63]/40 bg-white p-6 shadow-[0px_16px_32px_rgba(0,0,0,0.06)] md:p-8">
-          <p className="text-[11px] font-extrabold tracking-[1.5px] text-orange-3">BIOMARKER SIGNAL</p>
-          <p className="mt-2 text-sm text-[#6e6e6e]">Sleep, stress, nutrient markers</p>
+          <p className="text-sm font-bold uppercase tracking-[1px] text-[#1a1a1a]">Biomarker Signal</p>
+          <p className="mt-1.5 text-sm text-[#6e6e6e]">Energy, sleep, recovery, metabolism</p>
 
-          <div className="relative mt-8 h-2 rounded-full bg-[#f2e3d8]">
-            <div className="absolute inset-y-0 left-[55%] w-[25%] rounded-full bg-gradient-orange" />
-            <div className="absolute -top-1 left-[68%] h-4 w-4 -translate-x-1/2 rounded-full border-[3px] border-white bg-orange-2 shadow-[0_0_0_3px_rgba(242,122,46,0.2)]" />
+          <div ref={barRef} className="relative mt-8">
+            <div className="h-2 overflow-hidden rounded-full bg-[#f2e3d8]">
+              <motion.div
+                initial={{ clipPath: 'inset(0 100% 0 0)' }}
+                animate={inView ? { clipPath: 'inset(0 0% 0 0)' } : {}}
+                transition={{ duration: 1.4, ease: [0.45, 0.05, 0.15, 1] }}
+                className="h-full w-full"
+                style={{ backgroundImage: 'linear-gradient(90deg, #f4c542 0%, #f4ac63 35%, #f27a2e 65%, #e0391a 100%)' }}
+              />
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.3, left: '0%' }}
+              animate={inView ? { opacity: 1, scale: 1, left: '85%' } : {}}
+              transition={{ duration: 1.4, ease: [0.45, 0.05, 0.15, 1] }}
+              className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <motion.div
+                animate={inView ? { scale: [1, 1.2, 1] } : {}}
+                transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut', delay: 1.4 }}
+                className="h-4 w-4 rounded-full border-[3px] border-white bg-orange-2 shadow-[0_0_0_3px_rgba(242,122,46,0.25)]"
+              />
+            </motion.div>
           </div>
-          <div className="mt-3 flex justify-between text-xs font-semibold uppercase tracking-[1px] text-[#9a8878]">
-            <span>Low Range</span>
-            <span>In Range</span>
-            <span className="text-orange-2">Optimal</span>
+
+          <div className="mt-3 flex justify-between text-xs font-semibold uppercase tracking-[1px]">
+            <span style={{ color: '#e0a800' }}>Low Signal</span>
+            <span className="text-[#1a1a1a]">In Range</span>
+            <span style={{ color: '#e0391a' }}>Optimal</span>
           </div>
         </Reveal>
       </div>
