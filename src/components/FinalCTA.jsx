@@ -40,7 +40,7 @@ export default function FinalCTA() {
 
           <Reveal delay={0.3} className="flex justify-center md:block">
             <a
-              href="#choose"
+              href="https://partner.protocolhealthclub.com/general-health-a?am_id=alicia"
               className="mt-9 inline-block rounded-full bg-[#0a0a0a] px-7 py-3.5 text-lg font-semibold text-white"
             >
               Start bloodwork today

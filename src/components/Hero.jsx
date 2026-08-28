@@ -99,7 +99,7 @@ export default function Hero() {
             <img src={logoPart3} alt="" className="absolute left-[63px] top-0 h-4" />
           </a>
           <motion.a
-            href="#choose"
+            href="https://partner.protocolhealthclub.com/general-health-a?am_id=alicia"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             className="bg-gradient-orange rounded-full px-4 py-2 text-xs font-medium text-white"
@@ -146,7 +146,7 @@ export default function Hero() {
             className="mt-12 flex flex-col items-start gap-5"
           >
             <motion.a
-              href="#choose"
+              href="https://partner.protocolhealthclub.com/general-health-a?am_id=alicia"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="bg-gradient-orange flex w-full max-w-[420px] items-center justify-center gap-3 rounded-full px-10 py-4 text-xl font-bold text-white shadow-lg shadow-orange/30 sm:w-auto sm:min-w-[300px]"

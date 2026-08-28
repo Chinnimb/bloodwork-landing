@@ -19,7 +19,7 @@ export default function Header() {
         </a>
 
         <motion.a
-          href="#choose"
+          href="https://partner.protocolhealthclub.com/general-health-a?am_id=alicia"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
           className="bg-gradient-orange rounded-[20px] px-4 py-2 text-sm font-medium text-white"
